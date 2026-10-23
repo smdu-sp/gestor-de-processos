@@ -1,0 +1,680 @@
+// Introspectado em 23/10/2026: 1 tabela e 35 views. Somente leitura.
+// Não executar migrate/db push neste datasource. IDs das views não têm estabilidade comprovada.
+generator biClient {
+  provider        = "prisma-client-js"
+  output          = "../../src/generated/bi"
+  previewFeatures = ["views"]
+}
+
+datasource bi {
+  provider = "sqlserver"
+  url      = env("BI_DATABASE_URL")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model bronze_sd0261_T10345_CONS_OLHO_OBRA {
+  COD_UNID_PCSS_SEI Decimal?  @bi.Decimal(4, 0)
+  ANO_AUTC_PCSS     Decimal?  @bi.Decimal(4, 0)
+  COD_NRO_PCSS      Decimal?  @bi.Decimal(7, 0)
+  COD_SQL           Decimal?  @bi.Decimal(13, 0)
+  COD_RQRM          String?   @bi.VarChar(25)
+  COD_NRO_ALVA      String?   @bi.VarChar(20)
+  COD_LOG           Decimal?  @bi.Decimal(6, 0)
+  TXT_ENDE          String?   @bi.VarChar(100)
+  COD_NRO_IMOV      String?   @bi.VarChar(10)
+  TXT_CPLM_IMOV     String?   @bi.VarChar(20)
+  NOM_BAI           String?   @bi.VarChar(30)
+  COD_CEP           Decimal?  @bi.Decimal(8, 0)
+  NOM_URL_DOC_IMG   String?   @bi.VarChar(500)
+  DT_INCL           DateTime? @bi.DateTime
+  DT_ATLZ           DateTime? @bi.DateTime
+  COD_IDT_SIST      Decimal?  @bi.Decimal(1, 0)
+  COD_DIGI_PCSS     Decimal?  @bi.Decimal(1, 0)
+  dt_inclusao       DateTime? @bi.DateTime
+
+  @@ignore
+}
+
+view prata_categoriauso {
+  id_prata_categoria       BigInt    @default(autoincrement())
+  id_prata_assunto         BigInt?
+  sistema                  String?   @bi.VarChar(20)
+  processo                 String?   @bi.VarChar(20)
+  protocolo                String?   @bi.VarChar(20)
+  codigoPedido             String?   @bi.VarChar(50)
+  assunto                  String?   @bi.VarChar(100)
+  codcategoria             String?   @bi.VarChar(50)
+  txtcategoria             String?   @bi.VarChar(500)
+  codsubcategoria          String?   @bi.VarChar(500)
+  txtsubcategoria          String?   @bi.VarChar(500)
+  codgrupoatividade        String?   @bi.VarChar(500)
+  txtgrupoatividade        String?   @bi.VarChar(1000)
+  codatividade             String?   @bi.VarChar(500)
+  txtatividade             String?   @bi.VarChar(500)
+  OrigemDadoCategoria      String?   @bi.VarChar(50)
+  origem_carga             String?   @bi.VarChar(2000)
+  origem_codcategoria      String?   @bi.VarChar(500)
+  origem_txtcategoria      String?   @bi.VarChar(500)
+  origem_codsubcategoria   String?   @bi.VarChar(500)
+  origem_txtsubcategoria   String?   @bi.VarChar(500)
+  origem_codgrupoatividade String?   @bi.VarChar(500)
+  origem_txtgrupoatividade String?   @bi.VarChar(500)
+  origem_codatividade      String?   @bi.VarChar(500)
+  origem_txtatividade      String?   @bi.VarChar(500)
+  dtcarga                  DateTime? @bi.SmallDateTime
+  obs                      String?   @bi.VarChar(100)
+  dt_inclusao_bi           DateTime? @bi.DateTime
+  uso                      String?   @bi.VarChar(100)
+  HIS                      Int?      @bi.TinyInt
+  HMP                      Int?      @bi.TinyInt
+}
+
+view Processos {
+  id_processo        BigInt    @default(autoincrement())
+  Sistema            String?   @bi.VarChar(20)
+  Processo           String?   @bi.VarChar(20)
+  DtAutuacaoProcesso DateTime? @bi.Date
+  situacaoProcesso   String?   @bi.VarChar(50)
+  tipoprocesso       String?   @bi.VarChar(20)
+}
+
+view Assuntos {
+  id_assunto           BigInt    @default(autoincrement())
+  Sistema              String?   @bi.VarChar(20)
+  Processo             String?   @bi.VarChar(20)
+  CodigoPedido         String?   @bi.VarChar(50)
+  requerimentoSisacoe  String?   @bi.VarChar(20)
+  DtPedidoProtocolo    DateTime? @bi.Date
+  AssuntoCod           String?   @bi.VarChar(5)
+  Assunto              String?   @bi.VarChar(500)
+  Aditivo              String?   @bi.VarChar(50)
+  TipoRequerimento     String?   @bi.VarChar(50)
+  GrupoSituacaoAssunto String?   @bi.VarChar(50)
+  SituacaoAssunto      String?   @bi.VarChar(50)
+  NumDocumento         String?   @bi.VarChar(20)
+  NumDocIrregularidade String?   @bi.VarChar(50)
+  DtEmissaoDocumento   DateTime? @bi.Date
+  GrupoStatusDocumento String?   @bi.VarChar(20)
+  StatusDocumento      String?   @bi.VarChar(20)
+  Subprefeitura        String?   @bi.VarChar(50)
+  Distrito             String?   @bi.VarChar(50)
+}
+
+view Despachos {
+  id_despacho            BigInt    @default(autoincrement())
+  id_assunto             BigInt?
+  Sistema                String?   @bi.VarChar(20)
+  Processo               String?   @bi.VarChar(20)
+  Protocolo              String?   @bi.VarChar(20)
+  CodigoPedido           String?   @bi.VarChar(50)
+  SituacaoDespacho       String?   @bi.VarChar(50)
+  UnidadeDespacho        String?   @bi.VarChar(100)
+  CodUnidDespachoSimproc String?   @bi.VarChar(100)
+  ResponsavelDespacho    String?   @bi.VarChar(100)
+  ResponsavelDespachoId  String?   @bi.VarChar(100)
+  OperadorDespacho       String?   @bi.VarChar(100)
+  OperadorDespachoId     String?   @bi.VarChar(100)
+  DtEmissao              DateTime? @bi.Date
+  DtPublicacaoDOC        DateTime? @bi.Date
+}
+
+view ComuniqueSes {
+  id_comuniquese            BigInt    @default(autoincrement())
+  id_assunto                BigInt?
+  Sistema                   String?   @bi.VarChar(20)
+  Processo                  String?   @bi.VarChar(20)
+  Protocolo                 String?   @bi.VarChar(20)
+  CodigoPedido              String?   @bi.VarChar(50)
+  CodigoComuniquese         String?   @bi.VarChar(50)
+  SituacaoComuniqueSe       String?   @bi.VarChar(50)
+  UnidadeComuniquese        String?   @bi.VarChar(100)
+  CodUnidComuniqueseSimproc String?   @bi.VarChar(100)
+  ResponsavelComuniqueSe    String?   @bi.VarChar(100)
+  ResponsavelComuniqueSeId  String?   @bi.VarChar(100)
+  OperadorComuniqueSe       String?   @bi.VarChar(100)
+  OperadorComuniqueSeId     String?   @bi.VarChar(100)
+  DtEmissao                 DateTime? @bi.Date
+  DtPublicacaoDOC           DateTime? @bi.Date
+  DtInicioPrazoAtendimento  DateTime? @bi.Date
+}
+
+view Cadastros {
+  id_sql_incra  BigInt  @default(autoincrement())
+  id_assunto    BigInt?
+  Sistema       String? @bi.VarChar(20)
+  Processo      String? @bi.VarChar(20)
+  Protocolo     String? @bi.VarChar(20)
+  CodigoPedido  String? @bi.VarChar(50)
+  SQL_Incra     String? @bi.VarChar(50)
+  TipoSQL_Incra String? @bi.VarChar(100)
+}
+
+view prata_predio {
+  sistema            String?   @bi.VarChar(20)
+  processo           String?   @bi.VarChar(20)
+  protocolo          String?   @bi.VarChar(20)
+  codigoPedido       String?   @bi.VarChar(50)
+  item               Int?      @bi.SmallInt
+  tipo               String?   @bi.VarChar(100)
+  Valor              Decimal?  @bi.Decimal(18, 5)
+  origem_tipo        String?   @bi.VarChar(100)
+  tx_origem_carga_bi String?   @bi.VarChar(500)
+  dt_inclusao_bi     DateTime? @bi.DateTime
+}
+
+view Categorias {
+  id_categoria       BigInt  @default(autoincrement())
+  id_assunto         BigInt?
+  Sistema            String? @bi.VarChar(20)
+  Processo           String? @bi.VarChar(20)
+  Protocolo          String? @bi.VarChar(20)
+  codigoPedido       String? @bi.VarChar(50)
+  Categoria          String? @bi.VarChar(50)
+  DescCategoria      String? @bi.VarChar(500)
+  Subcategoria       String? @bi.VarChar(500)
+  DescSubcategoria   String? @bi.VarChar(500)
+  GrupoAtividade     String? @bi.VarChar(500)
+  DescGrupoAtividade String? @bi.VarChar(1000)
+  Atividade          String? @bi.VarChar(500)
+  DescAtividade      String? @bi.VarChar(500)
+}
+
+view Interessados {
+  id_interessado        BigInt  @default(autoincrement())
+  id_assunto            BigInt?
+  Sistema               String? @bi.VarChar(20)
+  Protocolo             String? @bi.VarChar(50)
+  Processo              String? @bi.VarChar(20)
+  codigoPedido          String? @bi.VarChar(50)
+  NomeInteressado       String? @bi.VarChar(255)
+  Atribuicao            String? @bi.VarChar(50)
+  TipoPessoaInteressado String? @bi.VarChar(50)
+  CPF_CNPJ_Interessado  String? @bi.VarChar(50)
+  Responsavel           String? @bi.VarChar(100)
+  NumConselho           String? @bi.VarChar(50)
+}
+
+view Zonas_Usos {
+  id_prata_zona_uso      BigInt    @default(autoincrement())
+  id_prata_assunto       BigInt?
+  sistema                String?   @bi.VarChar(20)
+  processo               String?   @bi.VarChar(20)
+  protocolo              String?   @bi.VarChar(20)
+  codigoPedido           String?   @bi.VarChar(50)
+  tipoZonaUso            String?   @bi.VarChar(20)
+  zonaUso                String?   @bi.VarChar(150)
+  siglaZonaUso           String?   @bi.VarChar(50)
+  OrigemDadoZonaUso      String?   @bi.VarChar(50)
+  origem_ZonaUso         String?   @bi.VarChar(150)
+  origem_carga           String?   @bi.VarChar(100)
+  leiDecreto             String?   @bi.VarChar(2000)
+  SQL                    String?   @bi.VarChar(4000)
+  dt_inclusao_bi         DateTime? @bi.DateTime
+  codigoZoneamento       String?   @bi.VarChar(20)
+  subprefeitura          String?   @bi.VarChar(150)
+  OrigemDadoSiglaZonaUso String?   @bi.VarChar(150)
+}
+
+view Amparos_Notas_Ressalvas {
+  id_prata_amparo_nota_ressalva BigInt  @default(autoincrement())
+  id_prata_assunto              BigInt?
+  Sistema                       String? @bi.VarChar(20)
+  Processo                      String? @bi.VarChar(20)
+  Protocolo                     String? @bi.VarChar(20)
+  codigoPedidoSistemaOrigem     String? @bi.VarChar(50)
+  TipoAmparoNotaRessalva        String? @bi.VarChar(1)
+  CodAmparoNotaRessalva         String? @bi.VarChar(20)
+  SeqAmparoNotaRessalva         Int?
+  TxtAmparoNotaRessalva         String? @bi.VarChar(4000)
+  TxtResumAmparoNotaRessalva    String? @bi.VarChar(500)
+}
+
+view QuadroAreas {
+  sistema            String?   @bi.VarChar(20)
+  processo           String?   @bi.VarChar(20)
+  protocolo          String?   @bi.VarChar(20)
+  codigoPedido       String?   @bi.VarChar(50)
+  tipoArea           String?   @bi.VarChar(100)
+  Area               Decimal?  @bi.Decimal(18, 5)
+  origem_tipoArea    String?   @bi.VarChar(100)
+  tx_origem_carga_bi String?   @bi.VarChar(500)
+  in_licenciasampa   Int?      @bi.TinyInt
+  dt_inclusao_bi     DateTime? @bi.DateTime
+}
+
+view Enderecos {
+  id_endereco           BigInt  @default(autoincrement())
+  id_assunto            BigInt?
+  Sistema               String? @bi.VarChar(20)
+  Processo              String? @bi.VarChar(20)
+  Protocolo             String? @bi.VarChar(20)
+  codigoPedido          String? @bi.VarChar(50)
+  CodLog                String? @bi.VarChar(50)
+  Logradouro            String? @bi.VarChar(200)
+  Numero                String? @bi.VarChar(50)
+  Complemento           String? @bi.VarChar(200)
+  Bairro                String? @bi.VarChar(100)
+  Cep                   String? @bi.VarChar(50)
+  origemEnderecoSisacoe String? @bi.VarChar(20)
+}
+
+view QuadroAreasUso {
+  sistema            String?   @bi.VarChar(20)
+  processo           String?   @bi.VarChar(20)
+  protocolo          String?   @bi.VarChar(20)
+  codigoPedido       String?   @bi.VarChar(50)
+  item               Int?      @bi.SmallInt
+  uso                String?   @bi.VarChar(200)
+  tipoArea           String?   @bi.VarChar(100)
+  Area               Decimal?  @bi.Decimal(18, 5)
+  origem_uso         String?   @bi.VarChar(200)
+  origem_tipoArea    String?   @bi.VarChar(100)
+  tx_origem_carga_bi String?   @bi.VarChar(500)
+  in_licenciasampa   Int?      @bi.TinyInt
+  dt_inclusao_bi     DateTime? @bi.DateTime
+}
+
+view prata_quadro_area {
+  sistema            String?   @bi.VarChar(20)
+  processo           String?   @bi.VarChar(20)
+  protocolo          String?   @bi.VarChar(20)
+  codigoPedido       String?   @bi.VarChar(50)
+  tipoArea           String?   @bi.VarChar(100)
+  ValorArea          Decimal?  @bi.Decimal(18, 5)
+  origem_tipoArea    String?   @bi.VarChar(100)
+  tx_origem_carga_bi String?   @bi.VarChar(500)
+  in_licenciasampa   Int?      @bi.TinyInt
+  dt_inclusao_bi     DateTime? @bi.DateTime
+}
+
+view prata_quadro_area_uso {
+  sistema            String?   @bi.VarChar(20)
+  processo           String?   @bi.VarChar(20)
+  protocolo          String?   @bi.VarChar(20)
+  codigoPedido       String?   @bi.VarChar(50)
+  item               Int?      @bi.SmallInt
+  uso                String?   @bi.VarChar(200)
+  tipoArea           String?   @bi.VarChar(100)
+  ValorArea          Decimal?  @bi.Decimal(18, 5)
+  origem_uso         String?   @bi.VarChar(200)
+  origem_tipoArea    String?   @bi.VarChar(100)
+  tx_origem_carga_bi String?   @bi.VarChar(500)
+  in_licenciasampa   Int?      @bi.TinyInt
+  dt_inclusao_bi     DateTime? @bi.DateTime
+}
+
+view prata_classificacao_viaria {
+  id_prata_classificacao_viaria    BigInt    @default(autoincrement())
+  id_prata_assunto                 BigInt?
+  sistema                          String?   @bi.VarChar(20)
+  processo                         String?   @bi.VarChar(20)
+  protocolo                        String?   @bi.VarChar(20)
+  codigoPedido                     String?   @bi.VarChar(50)
+  tipo_classificacao_viaria        String?   @bi.VarChar(20)
+  origem_carga                     String?   @bi.VarChar(100)
+  SQL                              String?   @bi.VarChar(4000)
+  classificacao_viaria             String?   @bi.VarChar(100)
+  origem_dado_classificacao_viaria String?   @bi.VarChar(100)
+  dt_inclusao_bi                   DateTime? @bi.DateTime
+}
+
+view ClassificacaoViaria {
+  id_prata_classificacao_viaria    BigInt    @default(autoincrement())
+  id_prata_assunto                 BigInt?
+  sistema                          String?   @bi.VarChar(20)
+  processo                         String?   @bi.VarChar(20)
+  protocolo                        String?   @bi.VarChar(20)
+  codigoPedido                     String?   @bi.VarChar(50)
+  tipo_classificacao_viaria        String?   @bi.VarChar(20)
+  origem_carga                     String?   @bi.VarChar(100)
+  SQL                              String?   @bi.VarChar(4000)
+  classificacao_viaria             String?   @bi.VarChar(100)
+  origem_dado_classificacao_viaria String?   @bi.VarChar(100)
+  dt_inclusao_bi                   DateTime? @bi.DateTime
+}
+
+view SQLsCondominio {
+  setor      String?  @bi.VarChar(3)
+  quadra     String?  @bi.VarChar(3)
+  condominio Decimal? @bi.Decimal(3, 0)
+  sql        String?  @bi.VarChar(20)
+  origem_sql Decimal? @bi.Decimal(11, 0)
+}
+
+view SQLsFiliacao {
+  sqlPai               String?  @bi.VarChar(20)
+  sqlFilho             String?  @bi.VarChar(20)
+  AnoMesInicial        String?  @bi.VarChar(5)
+  AnoMesFinal          String?  @bi.VarChar(5)
+  origem_sqlPai        Decimal? @bi.Decimal(11, 0)
+  origem_sqlFilho      Decimal? @bi.Decimal(11, 0)
+  origem_mesAnoInicial Decimal? @bi.Decimal(4, 0)
+  origem_mesAnoFinal   Decimal? @bi.Decimal(4, 0)
+}
+
+view prata_amparo_nota_ressalva {
+  id_prata_amparo_nota_ressalva BigInt    @default(autoincrement())
+  id_prata_assunto              BigInt?
+  sistema                       String?   @bi.VarChar(20)
+  processo                      String?   @bi.VarChar(20)
+  protocolo                     String?   @bi.VarChar(20)
+  codigoPedido                  String?   @bi.VarChar(50)
+  tipoAmparoNotaRessalva        String?   @bi.VarChar(1)
+  codAmparoNotaRessalva         String?   @bi.VarChar(20)
+  seqAmparoNotaRessalva         Int?
+  txtAmparoNotaRessalva         String?   @bi.VarChar(4000)
+  txtResumAmparoNotaRessalva    String?   @bi.VarChar(500)
+  origem_carga                  String?   @bi.VarChar(100)
+  dtcarga                       DateTime? @bi.SmallDateTime
+  dt_inclusao                   DateTime? @bi.DateTime
+}
+
+view prata_assunto {
+  id_prata_assunto          BigInt    @default(autoincrement())
+  sistema                   String?   @bi.VarChar(20)
+  processo                  String?   @bi.VarChar(20)
+  protocolo                 String?   @bi.VarChar(20)
+  codigoPedido              String?   @bi.VarChar(50)
+  dtPedidoProtocolo         DateTime? @bi.Date
+  assuntoCod                String?   @bi.VarChar(5)
+  assunto                   String?   @bi.VarChar(500)
+  aditivo                   String?   @bi.VarChar(50)
+  tipoRequerimento          String?   @bi.VarChar(50)
+  grupoSituacaoAssunto      String?   @bi.VarChar(50)
+  SituacaoAssunto           String?   @bi.VarChar(50)
+  numDocumento              String?   @bi.VarChar(20)
+  numDocIrregularidade      String?   @bi.VarChar(50)
+  dtEmissaoDocumento        DateTime? @bi.Date
+  statusDocumento           String?   @bi.VarChar(20)
+  subprefeitura             String?   @bi.VarChar(50)
+  distrito                  String?   @bi.VarChar(50)
+  origem_codigoPedido       String?   @bi.VarChar(50)
+  origem_assunto            String?   @bi.VarChar(500)
+  origem_situacaoAssunto    String?   @bi.VarChar(50)
+  origem_dtEmissaoDocumento String?   @bi.VarChar(50)
+  origem_statusDocumento    String?   @bi.VarChar(100)
+  origem_subprefeitura      String?   @bi.VarChar(50)
+  origem_distrito           String?   @bi.VarChar(50)
+  dtCarga                   DateTime? @bi.SmallDateTime
+  txCarga                   String?   @bi.VarChar(500)
+  GrupoStatusDocumento      String?   @bi.VarChar(20)
+  id_prata_processo         BigInt?
+  requerimentoSisacoe       String?   @bi.VarChar(20)
+  TipoCertificadoConclusao  String?   @bi.VarChar(10)
+  dt_inclusao               DateTime? @bi.DateTime
+}
+
+view prata_categoria {
+  id_prata_categoria       BigInt    @default(autoincrement())
+  id_prata_assunto         BigInt?
+  sistema                  String?   @bi.VarChar(20)
+  processo                 String?   @bi.VarChar(20)
+  protocolo                String?   @bi.VarChar(20)
+  codigoPedido             String?   @bi.VarChar(50)
+  codcategoria             String?   @bi.VarChar(50)
+  txtcategoria             String?   @bi.VarChar(500)
+  codsubcategoria          String?   @bi.VarChar(500)
+  txtsubcategoria          String?   @bi.VarChar(500)
+  codgrupoatividade        String?   @bi.VarChar(500)
+  txtgrupoatividade        String?   @bi.VarChar(1000)
+  codatividade             String?   @bi.VarChar(500)
+  txtatividade             String?   @bi.VarChar(500)
+  unidades                 String?   @bi.VarChar(100)
+  origem_carga             String?   @bi.VarChar(2000)
+  origem_codcategoria      String?   @bi.VarChar(500)
+  origem_txtcategoria      String?   @bi.VarChar(500)
+  origem_codsubcategoria   String?   @bi.VarChar(500)
+  origem_txtsubcategoria   String?   @bi.VarChar(500)
+  origem_codgrupoatividade String?   @bi.VarChar(500)
+  origem_txtgrupoatividade String?   @bi.VarChar(500)
+  origem_codatividade      String?   @bi.VarChar(500)
+  origem_txtatividade      String?   @bi.VarChar(500)
+  dtcarga                  DateTime? @bi.SmallDateTime
+  obs                      String?   @bi.VarChar(100)
+  areaComputavel           String?   @bi.VarChar(20)
+  areaNaoComputavel        String?   @bi.VarChar(20)
+  OrigemDadoCategoria      String?   @bi.VarChar(50)
+  dt_inclusao              DateTime? @bi.DateTime
+}
+
+view prata_comuniqueSe {
+  id_prata_comuniquese             BigInt    @default(autoincrement())
+  id_prata_assunto                 BigInt?
+  sistema                          String?   @bi.VarChar(20)
+  processo                         String?   @bi.VarChar(20)
+  protocolo                        String?   @bi.VarChar(20)
+  codigoPedido                     String?   @bi.VarChar(50)
+  codigoComuniquese                String?   @bi.VarChar(50)
+  situacaoComuniqueSe              String?   @bi.VarChar(50)
+  unidadeComuniquese               String?   @bi.VarChar(100)
+  codUnidComuniqueseSimproc        String?   @bi.VarChar(100)
+  responsavelComuniquese           String?   @bi.VarChar(100)
+  ResponsavelComuniqueseId         String?   @bi.VarChar(100)
+  dtEmissao                        DateTime? @bi.Date
+  dtPublicacaoDOC                  DateTime? @bi.Date
+  dtInicioPrazoAtendimento         DateTime? @bi.Date
+  origem_codigoPedido              String?   @bi.VarChar(50)
+  origem_situacaocomuniqueSe       String?   @bi.VarChar(100)
+  dtCarga                          DateTime? @bi.SmallDateTime
+  operadorComuniquese              String?   @bi.VarChar(100)
+  operadorComuniqueseId            String?   @bi.VarChar(100)
+  origem_UnidadeComuniquese        String?   @bi.VarChar(100)
+  origem_codUnidComuniqueseSimproc String?   @bi.VarChar(100)
+  dt_inclusao                      DateTime? @bi.DateTime
+  origem_operadorComuniqueseId     String?   @bi.VarChar(100)
+  origem_ResponsavelComuniqueseId  String?   @bi.VarChar(100)
+}
+
+view prata_despacho {
+  id_prata_despacho        BigInt    @default(autoincrement())
+  id_prata_assunto         BigInt?
+  sistema                  String?   @bi.VarChar(20)
+  processo                 String?   @bi.VarChar(20)
+  protocolo                String?   @bi.VarChar(20)
+  codigoPedido             String?   @bi.VarChar(50)
+  situacaoDespacho         String?   @bi.VarChar(50)
+  unidadeDespacho          String?   @bi.VarChar(100)
+  codUnidDespachoSimproc   String?   @bi.VarChar(100)
+  responsavelDespacho      String?   @bi.VarChar(100)
+  ResponsavelDespachoId    String?   @bi.VarChar(100)
+  dtEmissao                DateTime? @bi.Date
+  dtPublicacaoDOC          DateTime? @bi.Date
+  dtInicioPrazoAtendimento DateTime? @bi.Date
+  origem_codigoPedido      String?   @bi.VarChar(50)
+  origem_situacaodespacho  String?   @bi.VarChar(50)
+  dtCarga                  DateTime? @bi.SmallDateTime
+  operadorDespacho         String?   @bi.VarChar(100)
+  operadorDespachoId       String?   @bi.VarChar(100)
+  dt_inclusao              DateTime? @bi.DateTime
+}
+
+view prata_endereco {
+  id_prata_endereco     BigInt    @default(autoincrement())
+  id_prata_assunto      BigInt?
+  sistema               String?   @bi.VarChar(20)
+  processo              String?   @bi.VarChar(20)
+  protocolo             String?   @bi.VarChar(20)
+  codigoPedido          String?   @bi.VarChar(50)
+  codlog                String?   @bi.VarChar(50)
+  logradouro            String?   @bi.VarChar(200)
+  numero                String?   @bi.VarChar(50)
+  complemento           String?   @bi.VarChar(200)
+  bairro                String?   @bi.VarChar(100)
+  cep                   String?   @bi.VarChar(50)
+  subprefeitura_codlog  String?   @bi.VarChar(50)
+  distrito_codlog       String?   @bi.VarChar(50)
+  origemEnderecoSisacoe String?   @bi.VarChar(20)
+  origem_codlog         String?   @bi.VarChar(50)
+  origem_logradouro     String?   @bi.VarChar(200)
+  origem_numero         String?   @bi.VarChar(50)
+  origem_complemento    String?   @bi.VarChar(200)
+  origem_bairro         String?   @bi.VarChar(100)
+  origem_cep            String?   @bi.VarChar(50)
+  origem_subprefeitura  String?   @bi.VarChar(50)
+  origem_distrito       String?   @bi.VarChar(50)
+  dtcarga               DateTime? @bi.SmallDateTime
+  txCarga               String?   @bi.VarChar(100)
+  dt_inclusao           DateTime? @bi.DateTime
+}
+
+view prata_interessado {
+  id_prata_interessado   BigInt    @default(autoincrement())
+  id_prata_assunto       BigInt?
+  sistema                String?   @bi.VarChar(20)
+  processo               String?   @bi.VarChar(20)
+  protocolo              String?   @bi.VarChar(50)
+  codigoPedido           String?   @bi.VarChar(50)
+  nomeInteressado        String?   @bi.VarChar(255)
+  atribuicao             String?   @bi.VarChar(50)
+  origemDadoProprietario String?   @bi.VarChar(50)
+  tipoPessoaInteressado  String?   @bi.VarChar(50)
+  cpf_cnpj_interessado   String?   @bi.VarChar(50)
+  responsavel            String?   @bi.VarChar(100)
+  numConselho            String?   @bi.VarChar(50)
+  origem_nomeInteressado String?   @bi.VarChar(255)
+  origem_atribuicao      String?   @bi.VarChar(50)
+  dtCarga                DateTime? @bi.DateTime
+  txCarga                String?   @bi.VarChar(50)
+  dt_inclusao            DateTime? @bi.DateTime
+}
+
+view prata_processo {
+  id_prata_processo  BigInt    @default(autoincrement())
+  sistema            String?   @bi.VarChar(20)
+  processo           String?   @bi.VarChar(20)
+  dtAutuacaoProcesso DateTime? @bi.Date
+  dtcarga            DateTime? @bi.SmallDateTime
+  dt_inclusao        DateTime? @bi.DateTime
+  situacaoProcesso   String?   @bi.VarChar(50)
+  tipoprocesso       String?   @bi.VarChar(20)
+}
+
+view prata_sql_incra {
+  id_prata_sql_incra         BigInt    @default(autoincrement())
+  id_prata_assunto           BigInt?
+  sistema                    String?   @bi.VarChar(20)
+  processo                   String?   @bi.VarChar(20)
+  protocolo                  String?   @bi.VarChar(20)
+  codigoPedido               String?   @bi.VarChar(50)
+  sql_incra                  String?   @bi.VarChar(50)
+  tipoSql_incra              String?   @bi.VarChar(100)
+  subprefeitura_setor_quadra String?   @bi.VarChar(50)
+  distrito_setor_quadra      String?   @bi.VarChar(50)
+  origem_codigoPedido        String?   @bi.VarChar(50)
+  dtCarga                    DateTime? @bi.SmallDateTime
+  txCarga                    String?   @bi.VarChar(100)
+  dt_inclusao                DateTime? @bi.DateTime
+}
+
+view prata_zonaUso {
+  id_prata_zona_uso      BigInt    @default(autoincrement())
+  id_prata_assunto       BigInt?
+  sistema                String?   @bi.VarChar(20)
+  processo               String?   @bi.VarChar(20)
+  protocolo              String?   @bi.VarChar(20)
+  codigoPedido           String?   @bi.VarChar(50)
+  tipoZonaUso            String?   @bi.VarChar(20)
+  zonaUso                String?   @bi.VarChar(150)
+  siglaZonaUso           String?   @bi.VarChar(50)
+  OrigemDadoZonaUso      String?   @bi.VarChar(50)
+  origem_ZonaUso         String?   @bi.VarChar(150)
+  origem_carga           String?   @bi.VarChar(100)
+  leiDecreto             String?   @bi.VarChar(2000)
+  SQL                    String?   @bi.VarChar(4000)
+  dt_inclusao_bi         DateTime? @bi.DateTime
+  codigoZoneamento       String?   @bi.VarChar(20)
+  subprefeitura          String?   @bi.VarChar(150)
+  OrigemDadoSiglaZonaUso String?   @bi.VarChar(150)
+}
+
+view prata_sql_filiacao {
+  sqlPai               String?   @bi.VarChar(20)
+  sqlFilho             String?   @bi.VarChar(20)
+  AnoMesInicial        String?   @bi.VarChar(5)
+  AnoMesFinal          String?   @bi.VarChar(5)
+  origem_sqlPai        Decimal?  @bi.Decimal(11, 0)
+  origem_sqlFilho      Decimal?  @bi.Decimal(11, 0)
+  origem_mesAnoInicial Decimal?  @bi.Decimal(4, 0)
+  origem_mesAnoFinal   Decimal?  @bi.Decimal(4, 0)
+  dt_inclusao          DateTime? @bi.DateTime
+}
+
+view prata_sql_condominio {
+  setor       String?   @bi.VarChar(3)
+  quadra      String?   @bi.VarChar(3)
+  condominio  Decimal?  @bi.Decimal(3, 0)
+  sql         String?   @bi.VarChar(20)
+  origem_sql  Decimal?  @bi.Decimal(11, 0)
+  dt_inclusao DateTime? @bi.DateTime
+}
+
+view prata_outorga_onerosa {
+  sistema                                String?   @bi.VarChar(20)
+  codigoPedido                           String?   @bi.VarChar(50)
+  id_prata_assunto                       BigInt?
+  cd_identificador_guia_pagamento        Int?
+  cd_identificador_requerimento_execucao BigInt?
+  cd_situacao_guia_pagamento             Int?      @bi.TinyInt
+  dc_situacao_guia_pagamento             String?   @bi.VarChar(40)
+  dt_emissao                             DateTime? @bi.DateTime
+  dt_validade                            DateTime? @bi.DateTime
+  nr_dia_pagamento_parcela               Int?      @bi.TinyInt
+  nr_maximo_parcela                      Int?      @bi.TinyInt
+  nr_parcela                             Int?      @bi.TinyInt
+  dt_emissao_boleto                      DateTime? @bi.DateTime
+  nr_guia                                String?   @bi.VarChar(100)
+  dt_validade_boleto                     DateTime? @bi.DateTime
+  dt_pagamento_boleto                    DateTime? @bi.DateTime
+  cd_situacao_boleto                     Int?      @bi.TinyInt
+  dc_situacao_boleto                     String?   @bi.VarChar(40)
+  dtCarga                                DateTime? @bi.SmallDateTime
+  dt_inclusao                            DateTime? @bi.DateTime
+}
+
+view prata_assunto_referenciado {
+  GrupoAssuntoReferenciado     String?   @bi.VarChar(50)
+  tipoGrupoAssuntoReferenciado Int?      @bi.SmallInt
+  Sistema                      String?   @bi.VarChar(20)
+  CodigoPedido                 String?   @bi.VarChar(50)
+  Processo                     String?   @bi.VarChar(20)
+  Assunto                      String?   @bi.VarChar(200)
+  sql_incra                    String?   @bi.VarChar(20)
+  numDocumento                 String?   @bi.VarChar(20)
+  dtEmissaoDocumento           DateTime? @bi.Date
+  assuntoReferenciado          String?   @bi.VarChar(100)
+  documentoReferenciado        String?   @bi.VarChar(20)
+  processoReferenciado         String?   @bi.VarChar(20)
+  documentoAntigo              String?   @bi.VarChar(20)
+  dtEmissaoDocumentoAntigo     String?   @bi.VarChar(20)
+  codigoPedidoReferenciado     String?   @bi.VarChar(50)
+  sistemaReferenciado          String?   @bi.VarChar(20)
+}
+
+view AssuntosReferenciados {
+  GrupoAssuntoReferenciado     String?   @bi.VarChar(50)
+  tipoGrupoAssuntoReferenciado Int?      @bi.SmallInt
+  Sistema                      String?   @bi.VarChar(20)
+  Processo                     String?   @bi.VarChar(20)
+  protocolo                    String?   @bi.VarChar(20)
+  CodigoPedido                 String?   @bi.VarChar(50)
+  dtPedidoProtocolo            DateTime? @bi.Date
+  AssuntoCod                   String?   @bi.VarChar(5)
+  Assunto                      String?   @bi.VarChar(200)
+  TipoCertificadoConclusao     String?   @bi.VarChar(10)
+  aditivo                      String?   @bi.VarChar(50)
+  tipoRequerimento             String?   @bi.VarChar(50)
+  requerimentoSisacoe          String?   @bi.VarChar(20)
+  sql_incra                    String?   @bi.VarChar(20)
+  situacaoAssunto              String?   @bi.VarChar(50)
+  numDocumento                 String?   @bi.VarChar(20)
+  numDocIrregularidade         String?   @bi.VarChar(50)
+  dtEmissaoDocumento           DateTime? @bi.Date
+  statusDocumento              String?   @bi.VarChar(20)
+  assuntoReferenciado          String?   @bi.VarChar(100)
+  documentoReferenciado        String?   @bi.VarChar(20)
+  processoReferenciado         String?   @bi.VarChar(20)
+  documentoAntigo              String?   @bi.VarChar(20)
+  dtEmissaoDocumentoAntigo     String?   @bi.VarChar(20)
+  codigoPedidoReferenciado     String?   @bi.VarChar(50)
+  sistemaReferenciado          String?   @bi.VarChar(20)
+}

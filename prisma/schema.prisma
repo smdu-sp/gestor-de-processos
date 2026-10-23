@@ -1,0 +1,179 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+}
+model Unit {
+  id String @id @default(cuid())
+  code String @unique
+  name String
+  memberships Membership[]
+  processes Process[]
+  activities Activity[]
+}
+model User {
+  id String @id @default(cuid())
+  rf String @unique
+  name String
+  passwordHash String
+  role String @default("CONSULTA")
+  active Boolean @default(true)
+  memberships Membership[]
+  sessions Session[]
+  assignments Assignment[]
+  activities Activity[]
+}
+model Membership {
+  userId String
+  unitId String
+  user User @relation(fields: [userId], references: [id])
+  unit Unit @relation(fields: [unitId], references: [id])
+  @@id([userId, unitId])
+}
+model Session {
+  tokenHash String @id
+  userId String
+  user User @relation(fields: [userId], references: [id])
+  expiresAt DateTime
+}
+model Process {
+  id String @id @default(cuid())
+  number String @unique
+  biId String? @unique
+  protocol String?
+  system String @default("SEI")
+  subject String @db.Text
+  sourceStatus String?
+  sourceUnit String?
+  sourceUpdatedAt DateTime?
+  biSyncedAt DateTime?
+  seiStatus String?
+  seiSyncedAt DateTime?
+  sourceMissing Boolean @default(false)
+  unitId String
+  unit Unit @relation(fields: [unitId], references: [id])
+  status String @default("Aguardando distribuição")
+  instance String @default("Inicial")
+  decision String?
+  priority Boolean @default(false)
+  priorityReason String? @db.Text
+  notes String? @db.Text
+  closedAt DateTime?
+  lastOperationalAt DateTime @default(now())
+  createdAt DateTime @default(now())
+  version Int @default(0)
+  properties Property[]
+  parties Party[]
+  assignments Assignment[]
+  activities Activity[]
+  history History[]
+  groups ProcessGroup[]
+  letters Letter[]
+  locations PhysicalLocation[]
+  @@index([unitId, closedAt, lastOperationalAt])
+}
+model Property {
+  id String @id @default(cuid())
+  processId String
+  process Process @relation(fields: [processId], references: [id])
+  identifier String
+  address String @db.Text
+  origin String @default("LOCAL")
+  @@unique([processId, identifier, origin])
+}
+model Party {
+  id String @id @default(cuid())
+  processId String
+  process Process @relation(fields: [processId], references: [id])
+  name String @db.Text
+  role String
+  origin String @default("LOCAL")
+}
+model Assignment {
+  id String @id @default(cuid())
+  processId String
+  process Process @relation(fields: [processId], references: [id])
+  userId String
+  user User @relation(fields: [userId], references: [id])
+  unitId String
+  authorId String
+  reason String @db.Text
+  startedAt DateTime @default(now())
+  endedAt DateTime?
+  @@index([processId, endedAt])
+}
+model Activity {
+  id String @id @default(cuid())
+  processId String
+  process Process @relation(fields: [processId], references: [id])
+  userId String
+  user User @relation(fields: [userId], references: [id])
+  unitId String
+  unit Unit @relation(fields: [unitId], references: [id])
+  category String
+  type String @db.Text
+  description String @db.Text
+  startedAt DateTime
+  endedAt DateTime?
+  createdAt DateTime @default(now())
+  @@index([unitId, userId, endedAt])
+}
+model History {
+  id String @id @default(cuid())
+  processId String
+  process Process @relation(fields: [processId], references: [id])
+  kind String
+  origin String @default("LOCAL")
+  externalKey String? @unique
+  author String
+  description String @db.Text
+  occurredAt DateTime
+  recordedAt DateTime @default(now())
+  @@index([processId, occurredAt])
+}
+model Group {
+  id String @id @default(cuid())
+  name String @unique
+  processes ProcessGroup[]
+}
+model ProcessGroup {
+  processId String
+  groupId String
+  process Process @relation(fields: [processId], references: [id])
+  group Group @relation(fields: [groupId], references: [id])
+  @@id([processId, groupId])
+}
+model Letter {
+  id String @id @default(cuid())
+  processId String
+  process Process @relation(fields: [processId], references: [id])
+  number String @unique
+  recipient String @db.Text
+  sentAt DateTime?
+  repliedAt DateTime?
+  closedAt DateTime?
+}
+model PhysicalLocation {
+  id String @id @default(cuid())
+  processId String
+  process Process @relation(fields: [processId], references: [id])
+  location String @db.Text
+  volumes Int
+  boxes Int
+  createdAt DateTime @default(now())
+}
+model SyncRun {
+  id String @id @default(cuid())
+  source String
+  status String @default("RUNNING")
+  startedAt DateTime @default(now())
+  finishedAt DateTime?
+  processed Int @default(0)
+  message String? @db.Text
+}
+model SyncLock {
+  id String @id
+  expiresAt DateTime
+}

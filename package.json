@@ -1,0 +1,51 @@
+{
+  "name": "gestao-de-processos",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/next.cjs dev --webpack",
+    "build": "prisma generate && node scripts/next.cjs build --webpack",
+    "start": "node scripts/next.cjs start",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
+    "db:seed": "tsx prisma/seed.ts",
+    "setup": "node scripts/init-db.cjs && prisma generate && prisma migrate deploy && tsx prisma/seed.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "sync": "tsx scripts/sync.ts",
+    "test:e2e": "playwright test",
+    "format": "prettier --write src prisma/seed.ts scripts tests e2e playwright.config.ts next.config.ts",
+    "bi:generate": "prisma generate --schema prisma/bi/schema.prisma",
+    "bi:inspect": "node scripts/inspect-bi.cjs",
+    "db:up": "docker compose up -d --wait",
+    "db:down": "docker compose down",
+    "db:logs": "docker compose logs -f mysql",
+    "db:configure": "node scripts/configure-mysql.cjs"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^18.0.9",
+    "lucide-react": "^0.468.0",
+    "mssql": "^12.7.11",
+    "next": "^16.4.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "soap": "^1.14.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/mssql": "^12.3.0",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "prettier": "^3.9.10",
+    "prisma": "6.19.3",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "overrides": {
+    "deepmerge-ts": "8.0.0"
+  }
+}

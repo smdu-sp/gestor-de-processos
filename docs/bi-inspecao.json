@@ -1,0 +1,5818 @@
+{
+  "inspectedAt": "2026-10-23T17:13:34.643Z",
+  "objects": [
+    {
+      "schema_name": "dbo",
+      "name": "Amparos_Notas_Ressalvas",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "Assuntos",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "AssuntosReferenciados",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "type_desc": "USER_TABLE"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "Cadastros",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "Categorias",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "ClassificacaoViaria",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "ComuniqueSes",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "Despachos",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "Enderecos",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "Interessados",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_amparo_nota_ressalva",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_assunto",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_assunto_referenciado",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_categoria",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_categoriauso",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_classificacao_viaria",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_comuniqueSe",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_despacho",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_endereco",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_interessado",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_outorga_onerosa",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_predio",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_processo",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_quadro_area",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_quadro_area_uso",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_sql_condominio",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_sql_filiacao",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_sql_incra",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "prata_zonaUso",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "Processos",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "QuadroAreas",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "QuadroAreasUso",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "SQLsCondominio",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "SQLsFiliacao",
+      "type_desc": "VIEW"
+    },
+    {
+      "schema_name": "dbo",
+      "name": "Zonas_Usos",
+      "type_desc": "VIEW"
+    }
+  ],
+  "columns": [
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "id_prata_amparo_nota_ressalva",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "Protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "codigoPedidoSistemaOrigem",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "TipoAmparoNotaRessalva",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 1,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "CodAmparoNotaRessalva",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "SeqAmparoNotaRessalva",
+      "DATA_TYPE": "int",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 10,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "TxtAmparoNotaRessalva",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 4000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Amparos_Notas_Ressalvas",
+      "COLUMN_NAME": "TxtResumAmparoNotaRessalva",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "id_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "CodigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "requerimentoSisacoe",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "DtPedidoProtocolo",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "AssuntoCod",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 5,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "Assunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "Aditivo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "TipoRequerimento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "GrupoSituacaoAssunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "SituacaoAssunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "NumDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "NumDocIrregularidade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "DtEmissaoDocumento",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "GrupoStatusDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "StatusDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "Subprefeitura",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Assuntos",
+      "COLUMN_NAME": "Distrito",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "GrupoAssuntoReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "tipoGrupoAssuntoReferenciado",
+      "DATA_TYPE": "smallint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 5,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "CodigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "dtPedidoProtocolo",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "AssuntoCod",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 5,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "Assunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "TipoCertificadoConclusao",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 10,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "aditivo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "tipoRequerimento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "requerimentoSisacoe",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "sql_incra",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "situacaoAssunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "numDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "numDocIrregularidade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "dtEmissaoDocumento",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "statusDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "assuntoReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "documentoReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "processoReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "documentoAntigo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "dtEmissaoDocumentoAntigo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "codigoPedidoReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "AssuntosReferenciados",
+      "COLUMN_NAME": "sistemaReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "COD_UNID_PCSS_SEI",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 4,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "ANO_AUTC_PCSS",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 4,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "COD_NRO_PCSS",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 7,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "COD_SQL",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 13,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "COD_RQRM",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 25,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "COD_NRO_ALVA",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "COD_LOG",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 6,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "TXT_ENDE",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "COD_NRO_IMOV",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 10,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "TXT_CPLM_IMOV",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "NOM_BAI",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 30,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "COD_CEP",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 8,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "NOM_URL_DOC_IMG",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "DT_INCL",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "DT_ATLZ",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "COD_IDT_SIST",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 1,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "COD_DIGI_PCSS",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 1,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "bronze_sd0261_T10345_CONS_OLHO_OBRA",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Cadastros",
+      "COLUMN_NAME": "id_sql_incra",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Cadastros",
+      "COLUMN_NAME": "id_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Cadastros",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Cadastros",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Cadastros",
+      "COLUMN_NAME": "Protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Cadastros",
+      "COLUMN_NAME": "CodigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Cadastros",
+      "COLUMN_NAME": "SQL_Incra",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Cadastros",
+      "COLUMN_NAME": "TipoSQL_Incra",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "id_categoria",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "id_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "Protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "Categoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "DescCategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "Subcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "DescSubcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "GrupoAtividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "DescGrupoAtividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 1000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "Atividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Categorias",
+      "COLUMN_NAME": "DescAtividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "id_prata_classificacao_viaria",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "tipo_classificacao_viaria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "origem_carga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "SQL",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 4000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "classificacao_viaria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "origem_dado_classificacao_viaria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ClassificacaoViaria",
+      "COLUMN_NAME": "dt_inclusao_bi",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "id_comuniquese",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "id_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "Protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "CodigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "CodigoComuniquese",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "SituacaoComuniqueSe",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "UnidadeComuniquese",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "CodUnidComuniqueseSimproc",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "ResponsavelComuniqueSe",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "ResponsavelComuniqueSeId",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "OperadorComuniqueSe",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "OperadorComuniqueSeId",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "DtEmissao",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "DtPublicacaoDOC",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "ComuniqueSes",
+      "COLUMN_NAME": "DtInicioPrazoAtendimento",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "id_despacho",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "id_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "Protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "CodigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "SituacaoDespacho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "UnidadeDespacho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "CodUnidDespachoSimproc",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "ResponsavelDespacho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "ResponsavelDespachoId",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "OperadorDespacho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "OperadorDespachoId",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "DtEmissao",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Despachos",
+      "COLUMN_NAME": "DtPublicacaoDOC",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "id_endereco",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "id_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "Protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "CodLog",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "Logradouro",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "Numero",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "Complemento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "Bairro",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "Cep",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Enderecos",
+      "COLUMN_NAME": "origemEnderecoSisacoe",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "id_interessado",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "id_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "Protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "NomeInteressado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 255,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "Atribuicao",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "TipoPessoaInteressado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "CPF_CNPJ_Interessado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "Responsavel",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Interessados",
+      "COLUMN_NAME": "NumConselho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "id_prata_amparo_nota_ressalva",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "tipoAmparoNotaRessalva",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 1,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "codAmparoNotaRessalva",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "seqAmparoNotaRessalva",
+      "DATA_TYPE": "int",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 10,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "txtAmparoNotaRessalva",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 4000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "txtResumAmparoNotaRessalva",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "origem_carga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "dtcarga",
+      "DATA_TYPE": "smalldatetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_amparo_nota_ressalva",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "dtPedidoProtocolo",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "assuntoCod",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 5,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "assunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "aditivo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "tipoRequerimento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "grupoSituacaoAssunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "SituacaoAssunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "numDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "numDocIrregularidade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "dtEmissaoDocumento",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "statusDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "subprefeitura",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "distrito",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "origem_codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "origem_assunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "origem_situacaoAssunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "origem_dtEmissaoDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "origem_statusDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "origem_subprefeitura",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "origem_distrito",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "dtCarga",
+      "DATA_TYPE": "smalldatetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "txCarga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "GrupoStatusDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "id_prata_processo",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "requerimentoSisacoe",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "TipoCertificadoConclusao",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 10,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "GrupoAssuntoReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "tipoGrupoAssuntoReferenciado",
+      "DATA_TYPE": "smallint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 5,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "CodigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "Assunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "sql_incra",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "numDocumento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "dtEmissaoDocumento",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "assuntoReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "documentoReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "processoReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "documentoAntigo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "dtEmissaoDocumentoAntigo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "codigoPedidoReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_assunto_referenciado",
+      "COLUMN_NAME": "sistemaReferenciado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "id_prata_categoria",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "codcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "txtcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "codsubcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "txtsubcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "codgrupoatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "txtgrupoatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 1000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "codatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "txtatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "unidades",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "origem_carga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 2000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "origem_codcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "origem_txtcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "origem_codsubcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "origem_txtsubcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "origem_codgrupoatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "origem_txtgrupoatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "origem_codatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "origem_txtatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "dtcarga",
+      "DATA_TYPE": "smalldatetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "obs",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "areaComputavel",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "areaNaoComputavel",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "OrigemDadoCategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoria",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "id_prata_categoria",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "assunto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "codcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "txtcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "codsubcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "txtsubcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "codgrupoatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "txtgrupoatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 1000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "codatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "txtatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "OrigemDadoCategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "origem_carga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 2000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "origem_codcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "origem_txtcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "origem_codsubcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "origem_txtsubcategoria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "origem_codgrupoatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "origem_txtgrupoatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "origem_codatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "origem_txtatividade",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "dtcarga",
+      "DATA_TYPE": "smalldatetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "obs",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "dt_inclusao_bi",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "uso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "HIS",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_categoriauso",
+      "COLUMN_NAME": "HMP",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "id_prata_classificacao_viaria",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "tipo_classificacao_viaria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "origem_carga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "SQL",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 4000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "classificacao_viaria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "origem_dado_classificacao_viaria",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_classificacao_viaria",
+      "COLUMN_NAME": "dt_inclusao_bi",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "id_prata_comuniquese",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "codigoComuniquese",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "situacaoComuniqueSe",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "unidadeComuniquese",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "codUnidComuniqueseSimproc",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "responsavelComuniquese",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "ResponsavelComuniqueseId",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "dtEmissao",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "dtPublicacaoDOC",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "dtInicioPrazoAtendimento",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "origem_codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "origem_situacaocomuniqueSe",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "dtCarga",
+      "DATA_TYPE": "smalldatetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "operadorComuniquese",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "operadorComuniqueseId",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "origem_UnidadeComuniquese",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "origem_codUnidComuniqueseSimproc",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "origem_operadorComuniqueseId",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_comuniqueSe",
+      "COLUMN_NAME": "origem_ResponsavelComuniqueseId",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "id_prata_despacho",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "situacaoDespacho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "unidadeDespacho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "codUnidDespachoSimproc",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "responsavelDespacho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "ResponsavelDespachoId",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "dtEmissao",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "dtPublicacaoDOC",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "dtInicioPrazoAtendimento",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "origem_codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "origem_situacaodespacho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "dtCarga",
+      "DATA_TYPE": "smalldatetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "operadorDespacho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "operadorDespachoId",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_despacho",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "id_prata_endereco",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "codlog",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "logradouro",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "numero",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "complemento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "bairro",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "cep",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "subprefeitura_codlog",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "distrito_codlog",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "origemEnderecoSisacoe",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "origem_codlog",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "origem_logradouro",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "origem_numero",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "origem_complemento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "origem_bairro",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "origem_cep",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "origem_subprefeitura",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "origem_distrito",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "dtcarga",
+      "DATA_TYPE": "smalldatetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "txCarga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_endereco",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "id_prata_interessado",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "nomeInteressado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 255,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "atribuicao",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "origemDadoProprietario",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "tipoPessoaInteressado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "cpf_cnpj_interessado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "responsavel",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "numConselho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "origem_nomeInteressado",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 255,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "origem_atribuicao",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "dtCarga",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "txCarga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_interessado",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "cd_identificador_guia_pagamento",
+      "DATA_TYPE": "int",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 10,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "cd_identificador_requerimento_execucao",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "cd_situacao_guia_pagamento",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "dc_situacao_guia_pagamento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 40,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "dt_emissao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "dt_validade",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "nr_dia_pagamento_parcela",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "nr_maximo_parcela",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "nr_parcela",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "dt_emissao_boleto",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "nr_guia",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "dt_validade_boleto",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "dt_pagamento_boleto",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "cd_situacao_boleto",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "dc_situacao_boleto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 40,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "dtCarga",
+      "DATA_TYPE": "smalldatetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_outorga_onerosa",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_predio",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_predio",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_predio",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_predio",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_predio",
+      "COLUMN_NAME": "item",
+      "DATA_TYPE": "smallint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 5,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_predio",
+      "COLUMN_NAME": "tipo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_predio",
+      "COLUMN_NAME": "Valor",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 18,
+      "NUMERIC_SCALE": 5
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_predio",
+      "COLUMN_NAME": "origem_tipo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_predio",
+      "COLUMN_NAME": "tx_origem_carga_bi",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_predio",
+      "COLUMN_NAME": "dt_inclusao_bi",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_processo",
+      "COLUMN_NAME": "id_prata_processo",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_processo",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_processo",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_processo",
+      "COLUMN_NAME": "dtAutuacaoProcesso",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_processo",
+      "COLUMN_NAME": "dtcarga",
+      "DATA_TYPE": "smalldatetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_processo",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_processo",
+      "COLUMN_NAME": "situacaoProcesso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_processo",
+      "COLUMN_NAME": "tipoprocesso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area",
+      "COLUMN_NAME": "tipoArea",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area",
+      "COLUMN_NAME": "ValorArea",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 18,
+      "NUMERIC_SCALE": 5
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area",
+      "COLUMN_NAME": "origem_tipoArea",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area",
+      "COLUMN_NAME": "tx_origem_carga_bi",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area",
+      "COLUMN_NAME": "in_licenciasampa",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area",
+      "COLUMN_NAME": "dt_inclusao_bi",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "item",
+      "DATA_TYPE": "smallint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 5,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "uso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "tipoArea",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "ValorArea",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 18,
+      "NUMERIC_SCALE": 5
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "origem_uso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "origem_tipoArea",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "tx_origem_carga_bi",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "in_licenciasampa",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_quadro_area_uso",
+      "COLUMN_NAME": "dt_inclusao_bi",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_condominio",
+      "COLUMN_NAME": "setor",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 3,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_condominio",
+      "COLUMN_NAME": "quadra",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 3,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_condominio",
+      "COLUMN_NAME": "condominio",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_condominio",
+      "COLUMN_NAME": "sql",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_condominio",
+      "COLUMN_NAME": "origem_sql",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 11,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_condominio",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_filiacao",
+      "COLUMN_NAME": "sqlPai",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_filiacao",
+      "COLUMN_NAME": "sqlFilho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_filiacao",
+      "COLUMN_NAME": "AnoMesInicial",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 5,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_filiacao",
+      "COLUMN_NAME": "AnoMesFinal",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 5,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_filiacao",
+      "COLUMN_NAME": "origem_sqlPai",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 11,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_filiacao",
+      "COLUMN_NAME": "origem_sqlFilho",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 11,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_filiacao",
+      "COLUMN_NAME": "origem_mesAnoInicial",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 4,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_filiacao",
+      "COLUMN_NAME": "origem_mesAnoFinal",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 4,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_filiacao",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "id_prata_sql_incra",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "sql_incra",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "tipoSql_incra",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "subprefeitura_setor_quadra",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "distrito_setor_quadra",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "origem_codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "dtCarga",
+      "DATA_TYPE": "smalldatetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "txCarga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_sql_incra",
+      "COLUMN_NAME": "dt_inclusao",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "id_prata_zona_uso",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "tipoZonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "zonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 150,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "siglaZonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "OrigemDadoZonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "origem_ZonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 150,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "origem_carga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "leiDecreto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 2000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "SQL",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 4000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "dt_inclusao_bi",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "codigoZoneamento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "subprefeitura",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 150,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "prata_zonaUso",
+      "COLUMN_NAME": "OrigemDadoSiglaZonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 150,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Processos",
+      "COLUMN_NAME": "id_processo",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Processos",
+      "COLUMN_NAME": "Sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Processos",
+      "COLUMN_NAME": "Processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Processos",
+      "COLUMN_NAME": "DtAutuacaoProcesso",
+      "DATA_TYPE": "date",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Processos",
+      "COLUMN_NAME": "situacaoProcesso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Processos",
+      "COLUMN_NAME": "tipoprocesso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreas",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreas",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreas",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreas",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreas",
+      "COLUMN_NAME": "tipoArea",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreas",
+      "COLUMN_NAME": "Area",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 18,
+      "NUMERIC_SCALE": 5
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreas",
+      "COLUMN_NAME": "origem_tipoArea",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreas",
+      "COLUMN_NAME": "tx_origem_carga_bi",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreas",
+      "COLUMN_NAME": "in_licenciasampa",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreas",
+      "COLUMN_NAME": "dt_inclusao_bi",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "item",
+      "DATA_TYPE": "smallint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 5,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "uso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "tipoArea",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "Area",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 18,
+      "NUMERIC_SCALE": 5
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "origem_uso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 200,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "origem_tipoArea",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "tx_origem_carga_bi",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 500,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "in_licenciasampa",
+      "DATA_TYPE": "tinyint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "QuadroAreasUso",
+      "COLUMN_NAME": "dt_inclusao_bi",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsCondominio",
+      "COLUMN_NAME": "setor",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 3,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsCondominio",
+      "COLUMN_NAME": "quadra",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 3,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsCondominio",
+      "COLUMN_NAME": "condominio",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 3,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsCondominio",
+      "COLUMN_NAME": "sql",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsCondominio",
+      "COLUMN_NAME": "origem_sql",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 11,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsFiliacao",
+      "COLUMN_NAME": "sqlPai",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsFiliacao",
+      "COLUMN_NAME": "sqlFilho",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsFiliacao",
+      "COLUMN_NAME": "AnoMesInicial",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 5,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsFiliacao",
+      "COLUMN_NAME": "AnoMesFinal",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 5,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsFiliacao",
+      "COLUMN_NAME": "origem_sqlPai",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 11,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsFiliacao",
+      "COLUMN_NAME": "origem_sqlFilho",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 11,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsFiliacao",
+      "COLUMN_NAME": "origem_mesAnoInicial",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 4,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "SQLsFiliacao",
+      "COLUMN_NAME": "origem_mesAnoFinal",
+      "DATA_TYPE": "numeric",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 4,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "id_prata_zona_uso",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "NO",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "id_prata_assunto",
+      "DATA_TYPE": "bigint",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": 19,
+      "NUMERIC_SCALE": 0
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "sistema",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "processo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "protocolo",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "codigoPedido",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "tipoZonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "zonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 150,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "siglaZonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "OrigemDadoZonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 50,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "origem_ZonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 150,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "origem_carga",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "leiDecreto",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 2000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "SQL",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 4000,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "dt_inclusao_bi",
+      "DATA_TYPE": "datetime",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "codigoZoneamento",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 20,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "subprefeitura",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 150,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    },
+    {
+      "TABLE_SCHEMA": "dbo",
+      "TABLE_NAME": "Zonas_Usos",
+      "COLUMN_NAME": "OrigemDadoSiglaZonaUso",
+      "DATA_TYPE": "varchar",
+      "IS_NULLABLE": "YES",
+      "CHARACTER_MAXIMUM_LENGTH": 150,
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null
+    }
+  ],
+  "profile": [
+    {
+      "total": "373281",
+      "process_keys": 120369,
+      "missing_keys": 0,
+      "min_updated": "2022-02-10T16:54:38.000Z",
+      "max_updated": "2025-08-30T00:18:21.000Z"
+    }
+  ],
+  "systems": [
+    {
+      "COD_IDT_SIST": 3,
+      "rows": "85831"
+    },
+    {
+      "COD_IDT_SIST": 2,
+      "rows": "287450"
+    }
+  ],
+  "lengths": [
+    {
+      "min_number_length": 1,
+      "max_number_length": 6,
+      "min_sql_length": 9,
+      "max_sql_length": 11
+    }
+  ],
+  "definitions": [
+    {
+      "name": "Assuntos",
+      "definition": null
+    },
+    {
+      "name": "Cadastros",
+      "definition": null
+    },
+    {
+      "name": "Enderecos",
+      "definition": null
+    },
+    {
+      "name": "Interessados",
+      "definition": null
+    },
+    {
+      "name": "prata_processo",
+      "definition": null
+    },
+    {
+      "name": "Processos",
+      "definition": null
+    }
+  ],
+  "viewProfile": [
+    {
+      "total": "1407971",
+      "natural_keys": 1407971,
+      "ids": 1407971,
+      "missing_keys": 0
+    }
+  ]
+}
