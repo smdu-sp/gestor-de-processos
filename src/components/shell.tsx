@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { Actor } from "@/lib/auth";
+import { Actor, canManage } from "@/lib/auth";
 import { Logout } from "./widgets";
+import { ThemeToggle } from "./theme";
 import {
   LayoutDashboard,
   FolderOpen,
@@ -11,7 +12,8 @@ import {
   Layers,
   Mail,
   Archive,
-  Workflow,
+  UsersRound,
+  Building2,
 } from "lucide-react";
 const links = [
   ["/", "Visão geral", LayoutDashboard],
@@ -39,11 +41,21 @@ export function Shell({
       </a>
       <aside className="sidebar">
         <Link href="/" className="brand">
-          <Workflow size={30} />
+          <span className="brand-icon">
+            <img
+              className="brand-light"
+              src="/login/smul_icone_azul.png"
+              alt="SMUL"
+            />
+            <img
+              className="brand-dark"
+              src="/login/smul_icone_branco.png"
+              alt="SMUL"
+            />
+          </span>
           <span>
-            Gestão de
-            <br />
-            <strong>Processos</strong>
+            <strong>Gestão de Processos</strong>
+            <small>Licenciamento</small>
           </span>
         </Link>
         <div className="nav-label">LICENCIAMENTO</div>
@@ -59,6 +71,26 @@ export function Shell({
               {label}
             </Link>
           ))}
+          {canManage(user) && (
+            <Link
+              href="/servidores"
+              className={active === "Servidores" ? "selected" : ""}
+            >
+              <UsersRound size={19} />
+              Servidores
+            </Link>
+          )}
+          {user.role === "ADMIN" && (
+            <Link
+              href="/unidades"
+              className={
+                active === "Coordenadorias e divisões" ? "selected" : ""
+              }
+            >
+              <Building2 size={19} />
+              Coordenadorias e divisões
+            </Link>
+          )}
           {user.role === "ADMIN" && (
             <Link
               href="/integracoes"
@@ -84,6 +116,7 @@ export function Shell({
             <span>
               {user.name} <small className="muted">· {user.role}</small>
             </span>
+            <ThemeToggle />
             <Logout />
           </div>
         </header>

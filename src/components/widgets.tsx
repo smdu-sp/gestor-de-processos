@@ -2,16 +2,33 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 export function Logout() {
+  const [ready, setReady] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState("");
+  useEffect(() => setReady(true), []);
   return (
-    <button
-      className="ghost"
-      onClick={async () => {
-        await fetch("/api/auth", { method: "DELETE" });
-        window.location.href = "/login";
-      }}
-    >
-      Sair
-    </button>
+    <>
+      <button
+        className="ghost"
+        disabled={!ready || busy}
+        onClick={async () => {
+          setBusy(true);
+          setError("");
+          try {
+            const response = await fetch("/api/auth", { method: "DELETE" });
+            if (!response.ok)
+              throw new Error("Falha ao sair. Tente novamente.");
+            window.location.href = "/login";
+          } catch {
+            setError("Falha ao sair. Tente novamente.");
+            setBusy(false);
+          }
+        }}
+      >
+        Sair
+      </button>
+      {error && <span role="alert">{error}</span>}
+    </>
   );
 }
 export function ActionForm({

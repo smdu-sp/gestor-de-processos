@@ -6,17 +6,23 @@ async function main() {
   const password = process.env.SEED_PASSWORD;
   if (!password || password.length < 12)
     throw new Error("Defina SEED_PASSWORD com pelo menos 12 caracteres.");
-  for (const code of ["SERVIN", "DSIMP", "DSIGP"])
+  const servin = await db.coordination.upsert({
+    where: { code: "SERVIN" },
+    update: {},
+    create: {
+      code: "SERVIN",
+      name: "Coordenadoria de Serviços e Uso Institucional",
+    },
+  });
+  for (const [code, name] of [
+    ["SERVIN-G", "Gabinete da Coordenadoria"],
+    ["DSIMP", "Divisão DSIMP"],
+    ["DSIGP", "Divisão DSIGP"],
+  ])
     await db.unit.upsert({
       where: { code },
       update: {},
-      create: {
-        code,
-        name:
-          code === "SERVIN"
-            ? "Coordenadoria de Serviços e Uso Institucional"
-            : `Divisão ${code}`,
-      },
+      create: { code, name, coordinationId: servin.id },
     });
   const units = await db.unit.findMany({ orderBy: { code: "asc" } });
   const admin = await db.user.upsert({
@@ -26,8 +32,23 @@ async function main() {
       rf: "d000001",
       name: "Gestão local",
       role: "ADMIN",
+      unitId: units.find((u) => u.code === "SERVIN-G")!.id,
       passwordHash: await hash(password, 12),
       memberships: { create: units.map((u) => ({ unitId: u.id })) },
+    },
+  });
+  await db.user.upsert({
+    where: { rf: "d854440" },
+    update: {
+      name: "Bruno Luiz Vieira",
+      email: "blvieira@prefeitura.sp.gov.br",
+    },
+    create: {
+      rf: "d854440",
+      name: "Bruno Luiz Vieira",
+      email: "blvieira@prefeitura.sp.gov.br",
+      role: "CONSULTA",
+      passwordHash: await hash(password, 12),
     },
   });
   if (process.env.DEMO_MODE !== "true") return;
@@ -44,6 +65,7 @@ async function main() {
           "Carla Souza (exemplo)",
         ][i],
         role: "TECNICO",
+        unitId: unit.id,
         passwordHash: await hash(password, 12),
         memberships: { create: { unitId: unit.id } },
       },

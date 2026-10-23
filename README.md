@@ -20,6 +20,17 @@ Acesse http://localhost:3000. Administrador: **d000001**. Senha: valor de `SEED_
 
 ## Entrega
 
+### Identidade visual
+
+O padrão visual do projeto é o `outorga-fullstack`: fonte Sora, brasão SMUL, paleta, menu lateral, cartões, campos e tabelas. Os tokens estão em `src/app/globals.css`; os temas Claro, Escuro e Sistema são compartilhados entre o login e as telas internas por `src/components/theme.tsx`. Novas telas devem reutilizar esse padrão.
+
+### Login SMUL
+
+A tela de acesso foi adaptada do `outorga-fullstack`, com os mesmos logos, fotos do Martinelli e temas claro/escuro. `AUTH_MODE=local` dispensa a senha somente quando `NODE_ENV=development` (npm run dev), exigindo usu?rio cadastrado e ativo. Em produ??o, valida a senha cadastrada no banco. Para usar as credenciais de rede, configure `AUTH_MODE=ldap` e `SMUL_AUTH_API_URL` com a base da API SMUL Auth; o servidor chama `POST /auth/ldap/autenticar`. Sem `AUTH_MODE`, `ENVIRONMENT=local` seleciona o modo local e os demais ambientes usam LDAP. Não há fallback de LDAP para senha local.
+
+Usuários de rede novos são cadastrados inativos, com perfil CONSULTA e sem unidades. Um administrador deve ativar o registro em `User` e atribuir as unidades em `Membership` no banco (a gestão de usuários ainda não tem tela). Usuários inativos não entram. As permissões e sessões de 8 horas continuam no banco deste sistema, com cookie HttpOnly exclusivo `gestao-processos.session-token`. Sessões anteriores precisam de novo login. Nenhum usuário ou senha do banco de origem foi importado.
+
+
 - Login com cookie HttpOnly, perfis e restrições por unidade no servidor.
 - Dashboard, carteira paginada, filtros, busca por vínculos e CSV.
 - Cadastro, distribuição/redistribuição, atividades, conclusão, situação, encerramento/reabertura e histórico transacional.

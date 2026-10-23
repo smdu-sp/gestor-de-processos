@@ -1,11 +1,11 @@
 import { test, expect } from "@playwright/test";
 test("acesso à aplicação com MySQL operacional", async ({ page }) => {
   await page.goto("/login");
-  await page.getByLabel("Registro funcional").fill("d000001");
+  await page.getByLabel("Login", { exact: true }).fill("d000001");
   await page
     .getByLabel("Senha", { exact: true })
     .fill(process.env.SEED_PASSWORD!);
-  await page.getByRole("button", { name: "Entrar no sistema" }).click();
+  await page.getByRole("button", { name: "Entrar", exact: true }).click();
   await expect(
     page.getByRole("heading", { name: "Visão geral", exact: true }),
   ).toBeVisible();

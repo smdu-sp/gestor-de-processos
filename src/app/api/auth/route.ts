@@ -1,23 +1,34 @@
 import { NextRequest, NextResponse } from "next/server";
-import { compare } from "bcryptjs";
 import { cookies } from "next/headers";
 import { db } from "@/lib/db";
-import { hashToken, openSession } from "@/lib/auth";
+import { hashToken, openSession, SESSION_COOKIE } from "@/lib/auth";
+import { authenticateCredentials } from "@/lib/credentials";
+import { passwordlessDevelopment } from "@/lib/auth-mode";
 const attempts = new Map<string, { count: number; reset: number }>();
 export async function POST(req: NextRequest) {
   if (req.headers.get("origin") !== req.nextUrl.origin)
     return NextResponse.json({ error: "Origem inválida." }, { status: 403 });
-  const { rf, password } = await req.json();
+  const body = await req.json().catch(() => null);
+  const rf = body?.login ?? body?.rf;
+  const password =
+    body?.senha ??
+    body?.password ??
+    (passwordlessDevelopment() ? "" : undefined);
   if (
     typeof rf !== "string" ||
     typeof password !== "string" ||
+    rf.trim().length !== 7 ||
+    (!passwordlessDevelopment() && password.length < 1) ||
     password.length > 200
   )
     return NextResponse.json(
       { error: "Credenciais inválidas." },
       { status: 400 },
     );
-  const key = rf.toLowerCase().slice(0, 100);
+  const key = rf.trim().toLowerCase();
+  for (const [login, value] of attempts) {
+    if (value.reset < Date.now()) attempts.delete(login);
+  }
   const attempt = attempts.get(key) ?? { count: 0, reset: Date.now() + 900000 };
   if (attempt.reset < Date.now()) {
     attempt.count = 0;
@@ -30,10 +41,18 @@ export async function POST(req: NextRequest) {
     );
   attempt.count++;
   attempts.set(key, attempt);
-  const user = await db.user.findUnique({ where: { rf: key } });
-  if (!user?.active || !(await compare(password, user.passwordHash)))
+  let user;
+  try {
+    user = await authenticateCredentials(key, password);
+  } catch {
     return NextResponse.json(
-      { error: "RF ou senha inválidos." },
+      { error: "Não foi possível autenticar. Tente novamente mais tarde." },
+      { status: 503 },
+    );
+  }
+  if (!user)
+    return NextResponse.json(
+      { error: "Login ou senha inválidos, ou acesso ainda não liberado." },
       { status: 401 },
     );
   attempts.delete(key);
@@ -44,9 +63,9 @@ export async function DELETE(req: NextRequest) {
   if (req.headers.get("origin") !== req.nextUrl.origin)
     return NextResponse.json({ error: "Origem inválida." }, { status: 403 });
   const jar = await cookies();
-  const token = jar.get("session")?.value;
+  const token = jar.get(SESSION_COOKIE)?.value;
   if (token)
     await db.session.deleteMany({ where: { tokenHash: hashToken(token) } });
-  jar.delete("session");
+  jar.delete(SESSION_COOKIE);
   return NextResponse.json({ ok: true });
 }

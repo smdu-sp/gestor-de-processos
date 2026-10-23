@@ -44,8 +44,15 @@ test("fluxos transacionais, isolamento, redistribuição e sincronização idemp
   const { synchronize } = await import("../src/lib/integrations");
   const { processFilter } = await import("../src/lib/queries");
   try {
-    const a = await db.unit.create({ data: { code: "A", name: "Unidade A" } });
-    const b = await db.unit.create({ data: { code: "B", name: "Unidade B" } });
+    const coordination = await db.coordination.create({
+      data: { code: "C", name: "Coordenadoria C" },
+    });
+    const a = await db.unit.create({
+      data: { code: "A", name: "Unidade A", coordinationId: coordination.id },
+    });
+    const b = await db.unit.create({
+      data: { code: "B", name: "Unidade B", coordinationId: coordination.id },
+    });
     const admin = await db.user.create({
       data: {
         rf: "admin",

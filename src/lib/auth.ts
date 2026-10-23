@@ -1,10 +1,11 @@
 import { cookies } from "next/headers";
 import { createHash, randomBytes } from "node:crypto";
 import { db } from "./db";
+export const SESSION_COOKIE = "gestao-processos.session-token";
 export const hashToken = (value: string) =>
   createHash("sha256").update(value).digest("hex");
 export async function currentUser() {
-  const token = (await cookies()).get("session")?.value;
+  const token = (await cookies()).get(SESSION_COOKIE)?.value;
   if (!token) return null;
   const session = await db.session.findUnique({
     where: { tokenHash: hashToken(token) },
@@ -22,7 +23,7 @@ export async function openSession(userId: string) {
   await db.session.create({
     data: { tokenHash: hashToken(token), userId, expiresAt },
   });
-  (await cookies()).set("session", token, {
+  (await cookies()).set(SESSION_COOKIE, token, {
     httpOnly: true,
     sameSite: "lax",
     secure: process.env.NODE_ENV === "production",

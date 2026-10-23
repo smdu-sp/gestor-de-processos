@@ -5,10 +5,20 @@ datasource db {
   provider = "mysql"
   url = env("DATABASE_URL")
 }
+model Coordination {
+  id String @id @default(cuid())
+  code String @unique
+  name String
+  divisions Unit[]
+}
+// Divisão. Pertence a uma coordenadoria; processos e servidores ficam lotados aqui.
 model Unit {
   id String @id @default(cuid())
   code String @unique
   name String
+  coordinationId String
+  coordination Coordination @relation(fields: [coordinationId], references: [id])
+  staff User[] @relation("UserDivision")
   memberships Membership[]
   processes Process[]
   activities Activity[]
@@ -18,8 +28,11 @@ model User {
   rf String @unique
   name String
   passwordHash String
+  email String?
   role String @default("CONSULTA")
   active Boolean @default(true)
+  unitId String?
+  unit Unit? @relation("UserDivision", fields: [unitId], references: [id])
   memberships Membership[]
   sessions Session[]
   assignments Assignment[]

@@ -1,0 +1,230 @@
+﻿@font-face {
+  font-family: "Login Sora";
+  src: url("/login/Sora-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 800;
+  font-display: swap;
+}
+.login {
+  --surface: oklch(1 0 0);
+  --field: oklch(0.967 0.001 286.375);
+  --text: oklch(0.141 0.005 285.823);
+  --border: oklch(0.92 0.004 286.32);
+  --primary: oklch(0.3709 0.1727 263.68);
+  --ring: oklch(0.871 0.006 286.286);
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 42.5px;
+  background: var(--field);
+  color: var(--text);
+  font:
+    17px/25.5px "Login Sora",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-wrap: pretty;
+}
+.login[data-theme="dark"] {
+  --surface: oklch(0.274 0.006 286.033);
+  --field: oklch(0.141 0.005 285.823);
+  --text: oklch(0.985 0 0);
+  --border: oklch(0.274 0.006 286.033);
+  --primary: oklch(0.6613 0.214 14.64);
+  --ring: oklch(0.442 0.017 285.786);
+  background: var(--field);
+  color-scheme: dark;
+}
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 816px;
+  border: 1px solid var(--border);
+  border-radius: 12.625px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow:
+    0 1px 3px #0000001a,
+    0 1px 2px -1px #0000001a;
+}
+.form {
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 25.5px;
+  margin: 0;
+}
+.logo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 465;
+  display: block;
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  gap: 8.5px;
+  font:
+    500 14.875px/14.875px "Login Sora",
+    sans-serif;
+  padding-bottom: 8.5px;
+}
+.form input {
+  height: 38.25px;
+  min-height: 0;
+  min-width: 0;
+  padding: 4.25px 12.75px;
+  background: var(--field);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6.625px;
+  font:
+    400 14.875px/21.25px "Login Sora",
+    sans-serif;
+  box-shadow: 0 1px 2px #0000000d;
+  outline: none;
+}
+.form button {
+  background: var(--primary);
+  border: 0;
+  height: 38.25px;
+  min-height: 0;
+  padding: 8.5px 17px;
+  border-radius: 6.625px;
+  color: oklch(0.985 0 0);
+  font:
+    500 14.875px/21.25px "Login Sora",
+    sans-serif;
+  box-shadow: 0 1px 2px #0000000d;
+}
+.form button:hover {
+  filter: none;
+  opacity: 0.9;
+}
+.login input:focus-visible,
+.login button:focus-visible,
+.theme:focus-visible {
+  outline: none;
+  border-color: var(--ring);
+  box-shadow: 0 0 0 3px color-mix(in oklch, var(--ring) 50%, transparent);
+}
+.photo {
+  position: relative;
+}
+.photo img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.themeMenu {
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 8.5px;
+  right: 8.5px;
+  z-index: 2;
+}
+.theme {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 38.25px;
+  height: 38.25px;
+  border: 0;
+  border-radius: 6.625px;
+  background: oklch(0.967 0.001 286.375);
+  color: var(--primary);
+  box-shadow: 0 1px 2px #0000000d;
+  cursor: pointer;
+}
+.theme::-webkit-details-marker {
+  display: none;
+}
+.themeMenu[open] > .theme {
+  margin-bottom: 0;
+}
+.login[data-theme="dark"] .theme {
+  background: oklch(0.274 0.006 286.033);
+}
+.menu {
+  position: absolute;
+  right: 0;
+  top: 42.5px;
+  min-width: 136px;
+  padding: 4.25px;
+  border: 1px solid var(--border);
+  border-radius: 6.625px;
+  background: var(--field);
+  box-shadow: 0 4px 6px #0000001a;
+}
+.menu button {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  padding: 6.375px 8.5px;
+  background: transparent;
+  border: 0;
+  border-radius: 4.5px;
+  color: var(--text);
+  text-align: left;
+  font:
+    400 14.875px/21.25px "Login Sora",
+    sans-serif;
+}
+.menu button:hover {
+  background: var(--surface);
+}
+.error {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  max-width: min(356px, calc(100vw - 48px));
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #ffdadc;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #e60000;
+  font-size: 13px;
+  line-height: 19.5px;
+  box-shadow: 0 4px 12px #0000001a;
+  z-index: 3;
+}
+.background {
+  display: none;
+}
+@media (max-width: 767px) {
+  .login {
+    padding: 25.5px;
+  }
+  .card {
+    max-width: 408px;
+    grid-template-columns: 1fr;
+  }
+  .form {
+    padding: 25.5px;
+  }
+  .form input {
+    font-size: 17px;
+    line-height: 25.5px;
+  }
+  .photo {
+    display: none;
+  }
+  .background {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

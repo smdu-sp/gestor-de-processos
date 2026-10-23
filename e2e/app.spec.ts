@@ -13,14 +13,14 @@ test("login, carteira, histórico, relatórios e viewport móvel", async ({
   });
   await page.goto("/processos");
   await expect(page).toHaveURL(/login/);
-  await page.getByLabel("Registro funcional").fill("d000001");
+  await page.getByLabel("Login", { exact: true }).fill("d000001");
   await page
     .getByLabel("Senha", { exact: true })
     .fill(process.env.SEED_PASSWORD!);
   const responsePromise = page.waitForResponse(
     (r) => r.url().endsWith("/api/auth") && r.request().method() === "POST",
   );
-  await page.getByRole("button", { name: "Entrar no sistema" }).click();
+  await page.getByRole("button", { name: "Entrar", exact: true }).click();
   const response = await responsePromise;
   expect(response.status()).toBe(200);
   await expect(
